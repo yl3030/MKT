@@ -1,7 +1,7 @@
 var Pswiper = new Swiper("#introduce", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 30,
+  slidesPerView: 3,
+  spaceBetween: 20,
   // autoplay: {
   //   delay: 5000,
   //   disableOnInteraction: false,
@@ -14,19 +14,29 @@ var Pswiper = new Swiper("#introduce", {
     nextEl: ".Inext",
     prevEl: ".Iprev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 var ACarousel = $("#activity-slider");
-var carousel = new bootstrap.Carousel(ACarousel, {
+var A_carousel = new bootstrap.Carousel(ACarousel, {
   interval: 2000,
   wrap: false
 })
 
 var SCarousel = $("#social-slider");
-var carousel = new bootstrap.Carousel(SCarousel, {
+var S_carousel = new bootstrap.Carousel(SCarousel, {
   interval: 2000,
   wrap: false
 })
 
 
-$(".entrance").delay(3000).fadeOut(300);

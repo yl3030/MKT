@@ -16,11 +16,11 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="entrance">
+    <div class="entrance">
       <video autoplay="" muted="" playsinline>
         <source src="./public/img/entrance.mp4" type="video/mp4" />
       </video>
-    </div> -->
+    </div>
 
     <div class="banner">
       <header class="d-flex align-items-center justify-content-between">
@@ -31,19 +31,19 @@
           <ul class="d-flex align-items-center">
             <li><a href="#">服務案例</a></li>
             <li><a href="#">業務介紹</a></li>
-            <li><a href="#">課程報名</a></li>
+            <li data-bs-toggle="modal" data-bs-target="#courtModal"><a>課程報名</a></li>
           </ul>
         </nav>
         <div class="d-flex align-items-center">
-        <a class="fb" href="#">
-          <img src="./public/img/fb.png" alt="" />
-        </a>
-        <div id="menu-icon" data-bs-toggle="modal" data-bs-target="#menu">
+          <a class="fb" href="#">
+            <img src="./public/img/fb.png" alt="" />
+          </a>
+          <div id="menu-icon" data-bs-toggle="modal" data-bs-target="#menu">
             <div class="top-bar bar"></div>
             <div class="middle-bar bar"></div>
             <div class="bottom-bar bar"></div>
+          </div>
         </div>
-    </div>
       </header>
       <div class="content container">
         <div class="row align-items-center">
@@ -56,8 +56,8 @@
           </div>
           <div class="col-6">
             <img class="MKT" src="./public/img/MKT.png" alt="" />
-            <button data-bs-toggle="modal" data-bs-target="#courtModal">
-              <a href="#"><img src="./public/img/understand.png" alt="" /></a>
+            <button>
+              <a href="#contact"><img src="./public/img/understand.png" alt="" /></a>
             </button>
           </div>
           <p class="mobile-p col-12">
@@ -80,10 +80,10 @@
           <div class="modal-body">
             <img src="./public/img/cross.png" alt="" data-bs-dismiss="modal" />
             <ul>
-                <li><a href="#">服務案例</a></li>
-                <li><a href="#">業務介紹</a></li>
-                <li><a href="#">課程報名</a></li>
-              </ul>
+              <li><a href="#">服務案例</a></li>
+              <li><a href="#">業務介紹</a></li>
+              <li><a href="#">課程報名</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -116,210 +116,61 @@
             <div class="rounded-circle"></div>
             <span>業務介紹</span>
           </h2>
-          <div class="swiper-container" id="introduce">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide pc-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_social.png" alt="" />
-                      <h3>社群規劃</h3>
-                    </div>
-                    <div class="content">
-                      <h4>Facebook / Instagram</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_sale.png" alt="" />
-                      <h3>口碑行銷</h3>
-                    </div>
-                    <div class="content">
-                      <h4>網路輿論監控與控制</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
+
+          <div class="swiper-box">
+            <div class="swiper-container" id="introduce">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-content">
+                    <div class="inner">
+                      <div class="title">
+                        <img src="./public/img/icon_social.png" alt="" />
+                        <h3>社群規劃</h3>
+                      </div>
+                      <div class="content">
+                        <h4>Facebook / Instagram</h4>
+                        <ul>
+                          <li>品牌形象打造</li>
+                          <li>創意內容規劃</li>
+                          <li>精準廣告投放</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_web.png" alt="" />
-                      <h3>網站製作</h3>
-                    </div>
-                    <div class="content">
-                      <h4>輿論監控與操作</h4>
-                      <ul>
-                        <li>RWD跨平台響應式網站</li>
-                        <li>創意內容規劃設計</li>
-                        <li>視覺與動畫設計</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide pad-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_social.png" alt="" />
-                      <h3>社群規劃</h3>
-                    </div>
-                    <div class="content">
-                      <h4>Facebook / Instagram</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
+                <div class="swiper-slide">
+                  <div class="swiper-content">
+                    <div class="inner">
+                      <div class="title">
+                        <img src="./public/img/icon_sale.png" alt="" />
+                        <h3>口碑行銷</h3>
+                      </div>
+                      <div class="content">
+                        <h4>網路輿論監控與控制</h4>
+                        <ul>
+                          <li>品牌形象打造</li>
+                          <li>創意內容規劃</li>
+                          <li>精準廣告投放</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_sale.png" alt="" />
-                      <h3>口碑行銷</h3>
-                    </div>
-                    <div class="content">
-                      <h4>網路輿論監控與控制</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide pad-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_social.png" alt="" />
-                      <h3>社群規劃</h3>
-                    </div>
-                    <div class="content">
-                      <h4>Facebook / Instagram</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_web.png" alt="" />
-                      <h3>網站製作</h3>
-                    </div>
-                    <div class="content">
-                      <h4>輿論監控與操作</h4>
-                      <ul>
-                        <li>RWD跨平台響應式網站</li>
-                        <li>創意內容規劃設計</li>
-                        <li>視覺與動畫設計</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide pad-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_sale.png" alt="" />
-                      <h3>口碑行銷</h3>
-                    </div>
-                    <div class="content">
-                      <h4>網路輿論監控與控制</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_web.png" alt="" />
-                      <h3>網站製作</h3>
-                    </div>
-                    <div class="content">
-                      <h4>輿論監控與操作</h4>
-                      <ul>
-                        <li>RWD跨平台響應式網站</li>
-                        <li>創意內容規劃設計</li>
-                        <li>視覺與動畫設計</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide mobile-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_social.png" alt="" />
-                      <h3>社群規劃</h3>
-                    </div>
-                    <div class="content">
-                      <h4>Facebook / Instagram</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide mobile-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_sale.png" alt="" />
-                      <h3>口碑行銷</h3>
-                    </div>
-                    <div class="content">
-                      <h4>網路輿論監控與控制</h4>
-                      <ul>
-                        <li>品牌形象打造</li>
-                        <li>創意內容規劃</li>
-                        <li>精準廣告投放</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide mobile-slider">
-                <div class="swiper-content">
-                  <div class="inner">
-                    <div class="title">
-                      <img src="./public/img/icon_web.png" alt="" />
-                      <h3>網站製作</h3>
-                    </div>
-                    <div class="content">
-                      <h4>輿論監控與操作</h4>
-                      <ul>
-                        <li>RWD跨平台響應式網站</li>
-                        <li>創意內容規劃設計</li>
-                        <li>視覺與動畫設計</li>
-                      </ul>
+                <div class="swiper-slide">
+                  <div class="swiper-content">
+                    <div class="inner">
+                      <div class="title">
+                        <img src="./public/img/icon_web.png" alt="" />
+                        <h3>網站製作</h3>
+                      </div>
+                      <div class="content">
+                        <h4>輿論監控與操作</h4>
+                        <ul>
+                          <li>RWD跨平台響應式網站</li>
+                          <li>創意內容規劃設計</li>
+                          <li>視覺與動畫設計</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -392,7 +243,7 @@
 
       <div class="main-box select">
         <div class="content-box">
-            <h2 class="content-title"><span>精選案例</span></h2>
+          <h2 class="content-title"><span>精選案例</span></h2>
           <img class="bg" src="./public/img/activity-bg.png" alt="" />
           <ul class="nav nav-tabs" id="selectTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -489,63 +340,63 @@
               role="tabpanel"
               aria-labelledby="activity-tab"
             >
-            <div
-            id="activity-slider"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#activity-slider"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#activity-slider"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#activity-slider"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./public/img/activity-pic.png"
-                  class="d-block w-100"
-                  alt=""
-                />
+              <div
+                id="activity-slider"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#activity-slider"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#activity-slider"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#activity-slider"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./public/img/activity-pic.png"
+                      class="d-block w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./public/img/activity-pic.png"
+                      class="d-block w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./public/img/activity-pic.png"
+                      class="d-block w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img
-                  src="./public/img/activity-pic.png"
-                  class="d-block w-100"
-                  alt=""
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./public/img/activity-pic.png"
-                  class="d-block w-100"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="main-box contact">
+      <div class="main-box contact" id="contact">
         <h2 class="content-title"><span>Contacts Us</span></h2>
         <!-- <div class="container"> -->
         <form
@@ -595,5 +446,9 @@
     <script src="./public/js/bootstrap/bootstrap.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/index.js"></script>
+
+    <script>
+      $(".entrance").delay(3000).fadeOut(300);
+    </script>
   </body>
 </html>
