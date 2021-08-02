@@ -23,6 +23,7 @@ var Pswiper = new Swiper("#introduce", {
     },
     768: {
       slidesPerView: 3,
+      spaceBetween: 10,
     }
   }
 });
