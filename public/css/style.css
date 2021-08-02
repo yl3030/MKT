@@ -95,7 +95,13 @@ textarea {
   height: 90px;
   top: 0;
   left: 20%;
+  /* transform: translateX(-50%); */
   width: 60%;
+  justify-content: center;
+}
+
+.banner header .logo {
+  margin-right: 40px;
 }
 
 .banner header .logo img {
@@ -113,7 +119,7 @@ textarea {
 
 .banner header nav ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin-right: 40px;
   cursor: pointer;
   width: 85px;
 }
@@ -587,7 +593,7 @@ footer {
 
 @media screen and (max-width: 992px) {
   .banner header nav ul li {
-    margin: 0 15px;
+    /* margin: 0 15px; */
   }
   .introduce #introduce .swiper-slide .swiper-content .inner .title img {
     width: 30px;
@@ -615,6 +621,9 @@ footer {
     width: 70%;
     left: 15%;
   }
+  .banner header .logo {
+    margin-right: 20px;
+  }
   .banner header .logo img {
     height: 40px;
   }
@@ -626,7 +635,7 @@ footer {
     justify-content: space-between;
   }
   .banner header nav ul li {
-    margin: 0;
+    margin-right: 20px;
   }
   .banner header nav ul li a {
     font-size: 14px;
@@ -681,6 +690,16 @@ footer {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .banner header {
+    width: 80%;
+    left: 10%;
+  }
+  .banner header .logo img {
+    height: 34px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .main-box {
     padding: 40px 25px;
@@ -699,6 +718,9 @@ footer {
   }
   .banner header {
     z-index: 10;
+    justify-content: space-between;
+    width: 70%;
+    left: 15%;
   }
   .banner header nav {
     position: fixed;
