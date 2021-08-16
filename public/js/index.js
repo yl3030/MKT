@@ -1,7 +1,7 @@
 var Pswiper = new Swiper("#introduce", {
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 10,
   // autoplay: {
   //   delay: 5000,
   //   disableOnInteraction: false,
@@ -18,12 +18,20 @@ var Pswiper = new Swiper("#introduce", {
     0: {
       slidesPerView: 1,
     },
-    576: {
+    524: {
       slidesPerView: 2,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 10,
+    },
+    1100: {
+      slidesPerView: 4,
+    },
+    1500: {
+      slidesPerView: 5,
+    },
+    1800: {
+      slidesPerView: 6,
     }
   }
 });

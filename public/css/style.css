@@ -306,12 +306,19 @@ textarea {
 }
 
 .introduce .swiper-box {
-  position: relative;
   background-image: url(../img/grid.png);
   background-repeat: repeat no-repeat;
   background-position: -5px center;
-  background-size: 80%;
+  background-size: auto 50%;
+  position: relative;
   padding: 0 60px;
+}
+
+.introduce .swiper-box .inner {
+  /* margin: 0 auto; */
+  /* max-width: 900px; */
+  /* width: 100%; */
+  /* padding: 0 60px; */
 }
 
 .introduce #introduce {
@@ -347,7 +354,7 @@ textarea {
 }
 
 .introduce #introduce .swiper-slide .swiper-content .inner .title img {
-  width: 35px;
+  width: 45px;
   display: inline-block;
   margin-right: 5px;
   vertical-align: middle;
@@ -355,7 +362,7 @@ textarea {
 
 .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
   display: inline-block;
-  font-size: 30px;
+  font-size: 35px;
   vertical-align: middle;
   margin: 0;
 }
@@ -365,7 +372,7 @@ textarea {
 }
 
 .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .introduce .arrow {
@@ -589,6 +596,12 @@ footer {
   .contact form .input-box label span:first-child {
     font-size: 20px;
   }
+  /* .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
+    font-size: 35px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
+    font-size: 22px;
+  } */
 }
 
 @media screen and (max-width: 992px) {
@@ -612,6 +625,9 @@ footer {
   }
   .introduce #introduce .swiper-slide .swiper-content .inner {
     padding: 25px 10px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
+    font-size: 20px;
   }
 }
 
@@ -662,7 +678,10 @@ footer {
     background-size: 140%;
   }
   .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
-    font-size: 23px;
+    font-size: 35px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title img {
+    width: 45px;
   }
   .service .service-box img {
     width: 20%;
@@ -690,7 +709,35 @@ footer {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
+    font-size: 28px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title img {
+    width: 40px;
+  }
+  .introduce .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .introduce .arrow img {
+    width: 8px;
+  }
+  .introduce .arrow.Iprev {
+    left: 6px;
+  }
+  .introduce .arrow.Inext {
+    right: 6px;
+  }
+  .introduce .swiper-box {
+    padding: 0 40px;
+  }
+}
+
 @media screen and (max-width: 650px) {
+  .main-box {
+    padding: 40px;
+  }
   .banner header {
     width: 80%;
     left: 10%;
@@ -809,6 +856,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 523px) {
+  .introduce .swiper-box .sw-inner {
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .banner .content {
     bottom: 10%;
@@ -839,7 +894,7 @@ footer {
     /* font-size: 17px; */
   }
   .introduce .swiper-box {
-    padding: 0 50px;
+    /* padding: 0 50px; */
     background-size: 200%;
   }
   .introduce .arrow {
@@ -873,8 +928,31 @@ footer {
   }
 }
 
+
+
 @media screen and (max-width: 350px) {
   .banner .content {
     bottom: 20%;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title img {
+    width: 33px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
+    font-size: 23px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .introduce #introduce .swiper-slide .swiper-content .inner {
+    padding: 25px 10px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title img {
+    width: 43px;
+  }
+  .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
+    font-size: 30px;
   }
 }
