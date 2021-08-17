@@ -351,6 +351,7 @@ textarea {
   line-height: 1;
   padding-bottom: 15px;
   border-bottom: 2px solid #000;
+  text-align: center;
 }
 
 .introduce #introduce .swiper-slide .swiper-content .inner .title img {
@@ -369,10 +370,16 @@ textarea {
 
 .introduce #introduce .swiper-slide .swiper-content .inner .content {
   padding-top: 15px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
   font-size: 22px;
+}
+
+.introduce #introduce .swiper-slide .swiper-content.social .inner .content h4 {
+  font-size: 20px;
 }
 
 .introduce .arrow {
@@ -596,18 +603,9 @@ footer {
   .contact form .input-box label span:first-child {
     font-size: 20px;
   }
-  /* .introduce #introduce .swiper-slide .swiper-content .inner .title h3 {
-    font-size: 35px;
-  }
-  .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
-    font-size: 22px;
-  } */
 }
 
 @media screen and (max-width: 992px) {
-  .banner header nav ul li {
-    /* margin: 0 15px; */
-  }
   .introduce #introduce .swiper-slide .swiper-content .inner .title img {
     width: 30px;
   }
@@ -706,6 +704,12 @@ footer {
   }
   .contact form .input-box.phone {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .introduce #introduce .swiper-slide .swiper-content.social .inner .content h4 {
+    font-size: 18px;
   }
 }
 
@@ -856,6 +860,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 570px) {
+  .introduce #introduce .swiper-slide .swiper-content.social .inner .content h4 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 523px) {
   .introduce .swiper-box .sw-inner {
     margin: 0 auto;
@@ -943,7 +953,16 @@ footer {
   .introduce #introduce .swiper-slide .swiper-content .inner .content h4 {
     font-size: 18px;
   }
+  .introduce #introduce .swiper-slide .swiper-content.social .inner .content h4 {
+    font-size: 15px;
+  }
 }
+
+/* @media screen and (max-width: 570px) {
+  .introduce #introduce .swiper-slide .swiper-content.social .inner .content h4 {
+    font-size: 16px;
+  }
+} */
 
 @media screen and (min-width: 1100px) {
   .introduce #introduce .swiper-slide .swiper-content .inner {
